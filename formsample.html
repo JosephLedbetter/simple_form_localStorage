@@ -5,18 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form with Local Storage Sample</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="localStorage.css">
 
 </head>
 <body>
 
-    <div class="row">
+    <div class="row" id="info-form">
         <form class="col s12">
-          <div class="row">
+          <div class="row" >
             <div class="input-field col s6">
               <input placeholder="First Name" id="first_name" type="text" class="validate">
             </div>
             <div class="input-field col s6">
               <input placeholder="Last Name" id="last_name" type="text" class="validate">
+            </div>
+            <div class="input-field col s6">
+              <input placeholder="Age" id="age" type="number" class="validate">
+            </div>
+            <div class="input-field col s6">
+              <input placeholder="Email" id="email" type="email" class="validate">
             </div>
           </div>
           <button class="submit" id="submit-btn" style="color:white; background:blue; border-radius:10px; width:100px; height: 30px; font-weight: 500;" type="submit">Submit</button>
