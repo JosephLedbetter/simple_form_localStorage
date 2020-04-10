@@ -19,3 +19,9 @@ document.querySelector('form').addEventListener('submit', function(e){
     console.log(firstName, lastName);
     e.preventDefault()
 })
+
+const listOfNames = JSON.parse(localStorage.getItem('listOfNames'));
+
+listOfNames.forEach(function(lastName, firstName){
+        console.log(lastName, firstName)
+});
